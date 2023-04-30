@@ -14,4 +14,6 @@
   .link-text:hover {
     text-decoration: underline;
   }
-    
+.text-pink{
+  text-decoration: rgb(199, 71, 171);
+}   
