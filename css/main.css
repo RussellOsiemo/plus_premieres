@@ -1,0 +1,17 @@
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+  }
+  .small-text {
+    font-size: 12px;
+  }
+  
+  .link-text {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .link-text:hover {
+    text-decoration: underline;
+  }
+    
