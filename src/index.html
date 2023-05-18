@@ -363,29 +363,25 @@
             <div class="col-md-3 bg-light">
                 <h5 class="my-3">Chat Board</h5>
                 <hr>
-                <div class="d-flex flex-column chat">
-                  <div class="p-2 ms-3 mb-2 bg-secondary text-white rounded-start">
-                    <strong>User1:</strong> Hi, how are you?
-                  </div>
-                  <div class="p-2 me-3 mb-2 bg-primary text-white rounded-end">
-                    <strong>User2:</strong> I'm good, thanks for asking. How about you?
-                  </div>
-                  <div class="p-2 ms-3 mb-2 bg-secondary text-white rounded-start">
-                    <strong>User1:</strong> I'm doing well too.
-                  </div>
-                  <div class="p-2 me-3 mb-2 bg-primary text-white rounded-end">
-                    <strong>User2:</strong> That's great to hear!
-                  </div>
+                
+                <div class="d-flex flex-column chat" style = "max-height: 400px; overflow: auto; " id="chat-container">
                 </div>
+                
                 <h5 class="my-3">Chat Interface</h5>
                 <hr>
-                <form>
-                  <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Send</button>
-                </form>
+                
+                  <form>
+                    <div class="form-group">
+                      <label for="username">Username:</label>
+                      <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                
               </div>
               <!-- <div class="col-md-9"> -->
                 
@@ -850,7 +846,7 @@
     </section>
     <!-- footer  -->
     <section class="footer mt-3">
-      <footer class="bg-dark text-center text-lg-start text-pink ">
+      <footer class="bg-dark text-center text-lg-start  text-pink ">
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -921,5 +917,6 @@
       
     </section>
     <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../js/chat.js"></script>
   </body>
 </html>
